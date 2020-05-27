@@ -1,3 +1,3 @@
 # demo-ggoer
 
-This test repository.
+This is test repository.
