@@ -1,0 +1,16 @@
+/_book
+/maps/cesium/node_modules
+/gg-oer
+/GIS
+npm-debug.log
+.DS_Store
+/book.epub
+/book.pdf
+/gg-oer/materials/tasks
+/gg-oer/materials/resourse
+/maps/csv
+/maps/cesium/temp
+/pptxs_temp
+
+
+
