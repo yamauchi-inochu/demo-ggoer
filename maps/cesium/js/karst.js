@@ -60,7 +60,7 @@
       "image" : " ./img/red.png",
       "scale" : 0.5},
       "position" : {
-      "cartographicDegrees" : [135.874017	,	35.177895	,	3000]}
+      "cartographicDegrees" : [136.376729,	35.280293,	3000]}
     },{
       "id" : "5",
       "name" : "武甲山",
@@ -287,7 +287,7 @@ function Shikoku()
 
 function Omi()
     {viewer.camera.flyTo({
-     destination : Cesium.Cartesian3.fromDegrees(135.874017	,	35.177895	,	10000),
+     destination : Cesium.Cartesian3.fromDegrees(136.376729,	35.280293,	7000),
   orientation: {
     heading: 0,
     pitch: -1.6,
