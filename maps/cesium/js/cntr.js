@@ -258,7 +258,7 @@ function home()
 
       function setupLayers() {
         // layer group.
-        addBaseLayerOption("Bing Maps Aerial", undefined); // the current
+        addBaseLayerOption("Base", undefined); // the current
 
         // each layer.
 
