@@ -13,7 +13,7 @@
       geocoder:true,
       sceneModePicker:true,
       navigationHelpButton:false,
-      terrainExaggeration:1.2,
+      terrainExaggeration:1.5,
       terrainProvider : Cesium.createWorldTerrain()
     });
 
@@ -849,9 +849,12 @@
         "OpenStreetMaps",
         new Cesium.OpenStreetMapImageryProvider({
           credit:'<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a>'
-        })
+        }),
+        1.0,
+        false
+        );
       );
-      
+
       addAdditionalLayerOption(
         "主要な活断層",
         new Cesium.UrlTemplateImageryProvider({
@@ -862,6 +865,18 @@
       }),
       1.0,
       true
+      );
+
+      addAdditionalLayerOption(
+        "地形",
+        new Cesium.UrlTemplateImageryProvider({
+        url : './data/topo/{z}/{x}/{y}.png',
+        maximumLevel: 0,
+        maximumLevel: 8,
+        credit : new Cesium.Credit('Source=SRTM')
+      }),
+      1.0,
+      false
       );
     }
 

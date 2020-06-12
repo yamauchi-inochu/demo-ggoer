@@ -13,7 +13,7 @@
       geocoder:true,
       sceneModePicker:true,
       navigationHelpButton:false,
-      terrainExaggeration:1.2,
+      terrainExaggeration:1.5,
       terrainProvider : Cesium.createWorldTerrain()
     });
 
@@ -754,7 +754,9 @@ function Edo()
         "OpenStreetMaps",
         new Cesium.OpenStreetMapImageryProvider({
           credit:'<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a>'
-        })
+        }),
+        1.0,
+        false
       );
 
     }
