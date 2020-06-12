@@ -853,7 +853,6 @@
         1.0,
         false
         );
-      );
 
       addAdditionalLayerOption(
         "主要な活断層",
