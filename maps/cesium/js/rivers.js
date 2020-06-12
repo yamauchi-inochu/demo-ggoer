@@ -705,11 +705,27 @@ function Edo()
       // layer group.
       addBaseLayerOption("Base", undefined); // the current
 
+
       addBaseLayerOption(
-        "OpenStreetMaps",
-        new Cesium.OpenStreetMapImageryProvider({
-          credit:'<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a>'
-        })
+        "地理院タイル（色別標高図）",
+        new Cesium.UrlTemplateImageryProvider({
+        url : 'https://cyberjapandata.gsi.go.jp/xyz/relief/{z}/{x}/{y}.png',
+        maximumLevel: 15,
+        credit : new Cesium.Credit('<a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院　地理院タイル（色別標高図）＊「海域部は海上保安庁海洋情報部の資料を使用して作成」<a href =https://cyberjapandata.gsi.go.jp/legend/attension_relief.html>凡例<a></a>')
+        }),
+        1.0,
+        false
+      );
+
+      addBaseLayerOption(
+        "地理院タイル（陰影起伏図）",
+        new Cesium.UrlTemplateImageryProvider({
+        url : 'https://cyberjapandata.gsi.go.jp/xyz/hillshademap/{z}/{x}/{y}.png',
+        maximumLevel: 16,
+        credit : new Cesium.Credit('<a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院　地理院タイル（陰影起伏図）</a>')
+        }),
+        1.0,
+        false
       );
 
       addBaseLayerOption(
@@ -724,26 +740,23 @@ function Edo()
       );
 
       addBaseLayerOption(
-        "地理院タイル（標準地図）",
+        "地理院タイル（淡色地図）",
         new Cesium.UrlTemplateImageryProvider({
-        url : 'https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png',
+        url : 'https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png',
         maximumLevel: 18,
-        credit : new Cesium.Credit('<a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院　地理院タイル（標準地図）</a>')
+        credit : new Cesium.Credit('<a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院　地理院タイル（淡色地図）</a>')
       }),
       1.0,
       false
       );
 
       addAdditionalLayerOption(
-        "治水地形分類図",
-        new Cesium.UrlTemplateImageryProvider({
-        url : 'https://cyberjapandata.gsi.go.jp/xyz/lcmfc2/{z}/{x}/{y}.png',
-        maximumLevel: 16,
-        credit : new Cesium.Credit('<a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院　地理院タイル（治水地形分類図）</a>')
-        }),
-        1.0,
-        false
-        );
+        "OpenStreetMaps",
+        new Cesium.OpenStreetMapImageryProvider({
+          credit:'<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a>'
+        })
+      );
+
     }
 
     function addBaseLayerOption(name, imageryProvider) {
