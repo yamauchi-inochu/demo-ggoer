@@ -35,6 +35,6 @@ At the moment, 11 maps were published.
 |[River topography](https://yamauchi-inochu.github.io/demo-ggoer/maps/cesium/rivers.html)||
 |[Coastal topography](https://yamauchi-inochu.github.io/demo-ggoer/maps/cesium/coastal.html)||
 |[Glacial](https://yamauchi-inochu.github.io/demo-ggoer/maps/cesium/glacial.html)||
-|[Desert](https://yamauchi-inochu.github.io/demo-ggoer/maps/cesium/desert.html)||
+|[Deserts](https://yamauchi-inochu.github.io/demo-ggoer/maps/cesium/deserts.html)||
 |[Karst](https://yamauchi-inochu.github.io/demo-ggoer/maps/cesium/karst.html)||
 |[Reading contor lines](https://yamauchi-inochu.github.io/demo-ggoer/maps/cesium/cntr.html)||
