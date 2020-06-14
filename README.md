@@ -9,7 +9,7 @@ This is a test repository.
 https://yamauchi-inochu.github.io/demo-ggoer/maps/leaflet/
 
 You can choose some maps for learning GIS from below table.
-At the moment, 5 map were published.
+At the moment, 5 maps were published.
 
 |Contents|Memo|
 |---|---|
@@ -23,7 +23,7 @@ At the moment, 5 map were published.
 https://yamauchi-inochu.github.io/demo-ggoer/maps/cesium/
 
 You can choose some maps for learning topography from below table.
-At the moment, 11 map were published.
+At the moment, 11 maps were published.
 
 |Contents|Memo|
 |---|---|
