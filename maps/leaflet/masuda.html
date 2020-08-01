@@ -16,6 +16,10 @@
 		<link rel="stylesheet" href="./dist/leaflet.zoomhome.css"/>
 		<script src="./dist/leaflet.zoomhome.min.js"></script>
 		<script src="./dist/bundle.js"></script>
+<!-- plugin -->
+    <link rel="stylesheet" href="css/Control.OSMGeocoder.css" />
+    <script src="js/Control.OSMGeocoder.js"></script>
+<!-- plugin -->
 	</head>
 
 	<body style="height: 100%; margin: 0; overflow: hidden;">
@@ -88,6 +92,14 @@
 function manualPrint () {
 	printer.printMap('CurrentSize', 'MyManualPrint')
 }
+
+var option = {
+  position: 'topright', // topright, topleft, bottomright, bottomleft
+  text: '検索',
+  placeholder: '検索条件を入力してください。'
+}
+var osmGeocoder = new L.Control.OSMGeocoder(option);
+map.addControl(osmGeocoder);
 
 	</script>
 
