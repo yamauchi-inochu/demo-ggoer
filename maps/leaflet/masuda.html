@@ -43,17 +43,22 @@
 	attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル・全国最新写真</a>"
 	});
 
-	var map3 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort_old10/{z}/{x}/{y}.png', {
+	var map3 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/gazo1/{z}/{x}/{y}.jpg', {
+	maxZoom: 17,
+	attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル・過去空中写真（1974年～1978年）</a>"
+	});
+
+	var map4 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort_old10/{z}/{x}/{y}.png', {
 	maxZoom: 17,
 	attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル・過去空中写真（1961年～1969年）</a>"
 	});
 
-	var map4 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/hillshademap/{z}/{x}/{y}.png', {
+	var map5 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/hillshademap/{z}/{x}/{y}.png', {
 	maxZoom: 16,
 	attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル・陰影起伏図</a>"
 	});
 
-	var map5 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/lcmfc2/{z}/{x}/{y}.png', {
+	var map6 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/lcmfc2/{z}/{x}/{y}.png', {
 	maxZoom: 16,
 	attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル・治水地形分類図 更新版（2007～2019年）</a><a href='https://cyberjapandata.gsi.go.jp/legend/lcmfc2_legend.jpg' target='_blank'>凡例</a>"
 	});
@@ -61,7 +66,7 @@
 		var map = L.map('map', {
 			center: [34.686,131.834],
 			zoom: 14,
-			layers: [map2],
+			layers: [map0],
 			zoomControl: false
 		});
 
@@ -69,9 +74,10 @@
 			"OpenStreetMap": map0,
 			"淡色地図": map1,
 			"最新空中写真": map2,
-			"1960年代の空中写真":map3,
-			"陰影起伏図":map4,
-			"治水地形分類図":map5
+			"1974年～1978年の空中写真":map3,
+			"1960年代の空中写真":map4,
+			"陰影起伏図":map5,
+			"治水地形分類図":map6
 		};
 
 		L.control.layers(baseLayers).addTo(map);
